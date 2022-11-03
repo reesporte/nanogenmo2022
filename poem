@@ -1,0 +1,11 @@
+#!/bin/bash
+for i in {1..55000}
+do
+    shuf -n=1 connectives  | tr -s '\n' ' '; 
+    if ((i % $(((RANDOM % 5) + 5)) == 0)); then
+        echo ""
+    fi
+    if ((i % $(((RANDOM % 5) + 5)) == 0)); then
+        echo ""
+    fi
+done
